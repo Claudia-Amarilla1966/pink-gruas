@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Pink Grúas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><i class="fas fa-truck-tow"></i> Pink Grúas</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            <p class="section-subtitle">Estamos disponibles las 24 horas para ayudarte</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <!-- CORRECCIÓN: Teléfono con enlace -->
+                    <p><i class="fas fa-phone"></i> Teléfono: <a href="tel:+5491532461728">(15) 3246-1728</a></p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="https://wa.me/5491532461728">15-3246-1728</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:clauamarilla2009@gmail.com" class="email-link">Email: clauamarilla2009@gmail.com</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dirección: Magallanes 692, B1702 Ciudadela, Provincia de Buenos Aires</p>
+                    <p><i class="fas fa-clock"></i> Horario: 24/7 todos los días</p>
+                    
+                    <div class="emergency-contact">
+                        <h3>Emergencias las 24 horas</h3>
+                        <!-- CORRECCIÓN: Número de emergencia con enlace -->
+                        <p class="emergency-number"><i class="fas fa-phone-alt"></i> <a href="tel:+5491532461728">(15) 3246-1728</a></p>
+                        <a href="tel:+5491532461728" class="btn emergency-btn">Llamar ahora</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form action="https://formspree.io/f/xnnbzrzv" method="POST" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Servicio de interés</label>
+                            <select id="service" name="service">
+                                <option value="">Seleccione un servicio</option>
+                                <option value="grua-autos">Grúa para Autos</option>
+                                <option value="grua-camiones">Grúa para Camiones</option>
+                                <option value="transporte">Transporte de Vehículos</option>
+                                <option value="otro">Otro servicio</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3>Nuestra ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.3385844082036!2d-58.5306442!3d-34.6461512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc84211819093%3A0x485365ed145195d2!2sMagallanes%20692%2C%20B1702%20Ciudadela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1756737510070!5m2!1ses-419!2sar" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pink Grúas</h3>
+                    <p><strong>Líderes en asistencia vial</strong>. Respuesta inmediata 24/7 con la seguridad y profesionalismo que tu vehículo merece.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+5491532461728">15-3246-1728</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491532461728">15-3246-1728</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:clauamarilla2009@gmail.com">clauamarilla2009@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pink Grúas - Todos los derechos reservados</p>
+            </div>
+            <hr class="footer-separator">
+            <div class="contact-designer-wrapper">
+                <div class="contact-designer">
+                    <p>Diseño y Proyecto: Claudia Amarilla | Certificada - Desarrollo Web - Coderhouse | <a href="mailto:creativwebclaudia@gmail.com">CreativWebclaudia@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN DE WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/5491532461728?text=Hola,%20me%20gustaría%20solicitar%20un%20servicio%20de%20grúa" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
