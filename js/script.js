@@ -72,5 +72,41 @@ document.addEventListener('DOMContentLoaded', function () {
     //     });
     // }
 
+    // const contactForm = document.getElementById('contactForm');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function () {
+    //         setTimeout(() => {
+    //             window.location.href = 'gracias.html';
+    //         }, 1000); // Espera 1 segundo antes de redirigir
+    //     });
+    // }
+    const contactForm = document.getElementById('contactForm');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(contactForm);
+
+            fetch('https://formspree.io/f/movkvaeg', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = 'gracias.html';
+                    } else {
+                        alert('Hubo un problema al enviar el formulario. Intentalo nuevamente.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error de conexión. Por favor, revisá tu conexión a internet.');
+                });
+        });
+    }
 
 });
