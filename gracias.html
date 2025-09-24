@@ -3,17 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mensaje enviado correctamente</title>
-    <link rel="stylesheet" href="./css/style.css"> <!-- Ajustá la ruta si tu CSS está en otra carpeta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gracias por tu mensaje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fceff1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .thank-you-box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .thank-you-box .icon {
+            font-size: 48px;
+            color: #d81b60;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-box h1 {
+            color: #d81b60;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-box p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .thank-you-box .signature {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .thank-you-box .btn-home {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: #d81b60;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .thank-you-box .btn-home:hover {
+            background-color: #b0256a;
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-box {
+                padding: 30px 20px;
+            }
+
+            .thank-you-box h1 {
+                font-size: 24px;
+            }
+
+            .thank-you-box p {
+                font-size: 1em;
+            }
+
+            .thank-you-box .icon {
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="gracias">
-        <h1>Mensaje enviado correctamente</h1>
-        <p>Gracias por contactarnos. Hemos recibido tu consulta y te responderemos a la brevedad.</p>
-        <p class="firma">Este sitio fue desarrollado con atención a cada detalle, priorizando funcionalidad y
-            experiencia del usuario.</p>
-        <a href="index.html">← Volver al inicio</a>
+    <div class="thank-you-box">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="#d81b60">
+            <path
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8l8 5 8-5v10H4z" />
+        </svg>
+
+        <h1>¡Mensaje enviado con éxito!</h1>
+        <p>Gracias por contactarnos. Tu consulta fue recibida y te responderemos a la brevedad.</p>
+        <p>Ofrecemos asistencia vial inmediata, segura y personalizada. Tu mensaje ya está en camino a nuestro equipo.</p>
+
+        <a href="index.html" class="btn-home">← Volver al inicio</a>
+        <div class="signature">
+            Diseñado y desarrollado por Claudia Amarilla · Desarrolladora Web Freelance
+        </div>
     </div>
 </body>
 
