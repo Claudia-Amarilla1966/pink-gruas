@@ -9,7 +9,8 @@
 body {
     line-height: 1.6;
     color: #333;
-    background-color: #f5f7f9; /* MODIFICADO: Azul grisáceo muy suave */
+    background-color: #f5f7f9;
+    /* MODIFICADO: Azul grisáceo muy suave */
 }
 
 .container {
@@ -46,7 +47,8 @@ header {
     transition: all 0.6s ease;
     padding: 10px 20px;
     border-radius: 12px;
-    background-color: #6a6a6a; /* Gris medio suave */
+    background-color: #6a6a6a;
+    /* Gris medio suave */
     position: relative;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -70,11 +72,13 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, 
-                transparent, 
-                rgba(255, 255, 255, 0.12), /* Muy suave */
-                transparent);
-    transition: left 1.5s ease; /* Muy lento */
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.12),
+            /* Muy suave */
+            transparent);
+    transition: left 1.5s ease;
+    /* Muy lento */
     z-index: 0;
 }
 
@@ -84,14 +88,18 @@ header {
 
 /* Efectos de hover sutiles */
 .logo:hover {
-    transform: translateY(-1px); /* Movimiento muy suave */
+    transform: translateY(-1px);
+    /* Movimiento muy suave */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-    color: #ffe6ee; /* Rosa muy clarito */
-    background-color: #757575; /* Gris un poco más claro */
+    color: #ffe6ee;
+    /* Rosa muy clarito */
+    background-color: #757575;
+    /* Gris un poco más claro */
 }
 
 .logo:hover i {
-    transform: rotate(12deg); /* Rotación más suave */
+    transform: rotate(12deg);
+    /* Rotación más suave */
     background: #ff4d94;
     color: white;
 }
@@ -105,7 +113,8 @@ header {
     right: -1px;
     bottom: -1px;
     border-radius: 13px;
-    border: 1.5px solid transparent; /* Borde más delgado */
+    border: 1.5px solid transparent;
+    /* Borde más delgado */
     opacity: 0;
     transition: opacity 0.8s ease;
     z-index: -1;
@@ -113,12 +122,14 @@ header {
 
 .logo:hover::after {
     opacity: 1;
-    border-color: rgba(255, 77, 148, 0.5); /* Color semi-transparente */
+    border-color: rgba(255, 77, 148, 0.5);
+    /* Color semi-transparente */
 }
 
 /* Efecto de brillo muy suave */
 .logo:hover {
-    filter: brightness(1.08); /* Brillo casi imperceptible */
+    filter: brightness(1.08);
+    /* Brillo casi imperceptible */
 }
 
 /* Versión responsive para móviles */
@@ -128,13 +139,13 @@ header {
         padding: 8px 16px;
         background-color: #6d6d6d;
     }
-    
+
     .logo i {
         margin-right: 8px;
         padding: 5px;
         font-size: 16px;
     }
-    
+
     .logo:hover {
         background-color: #787878;
         transform: translateY(-1px);
@@ -323,7 +334,8 @@ section {
 
 .service-img {
     height: 200px;
-    background: linear-gradient(45deg, #d81b60, #e91e63); /* Degradado con el color del título */
+    background: linear-gradient(45deg, #d81b60, #e91e63);
+    /* Degradado con el color del título */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +345,8 @@ section {
 }
 
 .service-card:hover .service-img {
-    background: linear-gradient(45deg, #e91e63, #d81b60); /* Degradado invertido al hover */
+    background: linear-gradient(45deg, #e91e63, #d81b60);
+    /* Degradado invertido al hover */
 }
 
 .service-content {
@@ -362,7 +375,8 @@ section {
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, #d81b60, #e91e63); /* Degradado horizontal */
+    background: linear-gradient(90deg, #d81b60, #e91e63);
+    /* Degradado horizontal */
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -434,9 +448,11 @@ section {
     font-size: 120px;
     color: #d81b60;
 }
+
 /* SECCIÓN CONTACTO */
 #contacto {
-    background-color: #f5f7f9; /* MODIFICADO: Mismo que el body para consistencia */
+    background-color: #f5f7f9;
+    /* MODIFICADO: Mismo que el body para consistencia */
 }
 
 .contact-container {
@@ -487,7 +503,8 @@ section {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid #e9ecef; /* AÑADIDO: Borde sutil para definición */
+    border: 1px solid #e9ecef;
+    /* AÑADIDO: Borde sutil para definición */
 }
 
 .form-group {
@@ -573,14 +590,19 @@ section {
 /* =========== */
 /* ESTILOS PARA ENLACES DE CONTACTO - SOLUCIÓN */
 .contact-info a {
-    color: #d81b60 !important; /* Color rosa corporativo */
-    text-decoration: none; /* Elimina el subrayado */
-    transition: color 0.3s ease; /* Transición suave para el hover */
-    font-weight: 500; /* Opcional: hace el texto un poco más grueso */
+    color: #d81b60 !important;
+    /* Color rosa corporativo */
+    text-decoration: none;
+    /* Elimina el subrayado */
+    transition: color 0.3s ease;
+    /* Transición suave para el hover */
+    font-weight: 500;
+    /* Opcional: hace el texto un poco más grueso */
 }
 
 .contact-info a:hover {
-    color: #b01050 !important; /* Color rosa más oscuro al hacer hover */
+    color: #b01050 !important;
+    /* Color rosa más oscuro al hacer hover */
 }
 
 /* Opcional: Para que los íconos también cambien de color al hacer hover */
@@ -590,19 +612,24 @@ section {
 
 /* Estilos específicos para el botón de emergencia (para que mantenga su estilo) */
 .emergency-contact a.btn {
-    color: white !important; /* Mantiene el texto blanco en el botón */
+    color: white !important;
+    /* Mantiene el texto blanco en el botón */
 }
 
 .emergency-contact a.btn:hover {
-    color: white !important; /* Mantiene el texto blanco en el hover del botón */
-    background-color: #e60000; /* Color de hover que ya tienes definido */
-    transform: translateY(-3px); /* Efecto de hover que ya tienes */
+    color: white !important;
+    /* Mantiene el texto blanco en el hover del botón */
+    background-color: #e60000;
+    /* Color de hover que ya tienes definido */
+    transform: translateY(-3px);
+    /* Efecto de hover que ya tienes */
 }
+
 /* SECCIÓN LLAMADA A LA ACCIÓN */
 #cta {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url(../images/gruados.png) 
-                no-repeat center 80% / cover; /* ¡Aquí está el cambio! */
+        url(../images/gruados.png) no-repeat center 80% / cover;
+    /* ¡Aquí está el cambio! */
     color: white;
     text-align: center;
     min-height: 500px;
@@ -610,6 +637,7 @@ section {
     align-items: center;
     justify-content: center;
 }
+
 .cta-content h2 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -641,7 +669,7 @@ footer {
 .footer-section {
     display: flex;
     flex-direction: column;
-    gap: 12px; 
+    gap: 12px;
 }
 
 .footer-section h3 {
@@ -653,7 +681,7 @@ footer {
 .footer-section p,
 .footer-section ul li {
     /* margin-bottom: 0;  */
-    line-height: 1.6; 
+    line-height: 1.6;
 }
 
 
@@ -693,17 +721,17 @@ footer {
 }
 
 .footer-section a:hover {
-    color: #ff4d94 !important; 
+    color: #ff4d94 !important;
 }
 
 /* Estilos específicos para los enlaces de contacto */
-.footer-section h3 + p a,
-.footer-section h3 + p a:visited {
-    color: #ddd !important; 
+.footer-section h3+p a,
+.footer-section h3+p a:visited {
+    color: #ddd !important;
 }
 
-.footer-section h3 + p a:hover {
-    color: #ff4d94 !important; 
+.footer-section h3+p a:hover {
+    color: #ff4d94 !important;
 }
 
 /* BOTÓN DE WHATSAPP */
@@ -736,9 +764,11 @@ footer {
     0% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
     }
+
     70% {
         box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
@@ -757,31 +787,31 @@ footer {
         padding: 20px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     }
-    
+
     .nav-links.active {
         display: flex;
     }
-    
+
     .nav-links li {
         margin: 10px 0;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .hero-content h1 {
         font-size: 36px;
     }
-    
+
     .hero-content p {
         font-size: 18px;
     }
-    
+
     .section-title {
         font-size: 28px;
     }
-    
+
     .whatsapp-float {
         width: 50px;
         height: 50px;
@@ -840,7 +870,7 @@ footer {
         font-size: 11px;
         padding: 8px 5px;
     }
-    
+
     .footer-separator {
         margin: 20px 0 10px;
     }
@@ -848,30 +878,31 @@ footer {
 
 
 .gracias h1 {
-  color: #d81b60;
-  font-size: 32px;
+    color: #d81b60;
+    font-size: 32px;
 }
 
 .gracias p {
-  color: #444;
-  font-size: 18px;
-  margin-top: 20px;
+    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .gracias a {
-  color: #d81b60;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 30px;
-  display: inline-block;
+    color: #d81b60;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    display: inline-block;
 }
 
 .gracias a:hover {
-  color: #b0154e;
+    color: #b0154e;
 }
+
 .gracias .firma {
-  font-size: 16px;
-  color: #444;
-  margin-top: 40px;
-  font-style: italic;
+    font-size: 16px;
+    color: #444;
+    margin-top: 40px;
+    font-style: italic;
 }
