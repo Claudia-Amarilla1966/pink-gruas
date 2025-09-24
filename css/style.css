@@ -845,3 +845,33 @@ footer {
         margin: 20px 0 10px;
     }
 }
+
+
+.gracias h1 {
+  color: #d81b60;
+  font-size: 32px;
+}
+
+.gracias p {
+  color: #444;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.gracias a {
+  color: #d81b60;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.gracias a:hover {
+  color: #b0154e;
+}
+.gracias .firma {
+  font-size: 16px;
+  color: #444;
+  margin-top: 40px;
+  font-style: italic;
+}
