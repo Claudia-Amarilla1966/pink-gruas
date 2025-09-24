@@ -65,12 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
     //         alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
     //     });
     // }
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function () {
-            this.reset(); // Opcional
-        });
-    }
+    // const contactForm = document.getElementById('contactForm');
+    // if (contactForm) {
+    //     contactForm.addEventListener('submit', function () {
+    //         this.reset(); // Opcional
+    //     });
+    // }
 
 
 });
